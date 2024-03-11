@@ -1,69 +1,74 @@
 ﻿using System;
 
+#region ПРОЧТИ
 ///  ЭТО ВЕЛИКОЛЕПНАЯ БИБЛИОТЕКА КЛАССОВ
 ///  ВСЕ ЧТО ОТ ВАС НАДО - ЭТО СОЗДАТЬ СВОЙ СОБСТВЕННЫЙ !!КЛАСС!!
 ///  И НАД НИМ ПОДПИСАТЬ В ЧТО ОН, КТО ОН, КЕМ ОН.
 ///  ПРИ КОММИТЕ ВЫ УКАЗЫВАЕТЕ ВАРИАНТ
 ///  ЕСЛИ БИБЛИОТЕК ВДРУГ СТАЛО БОЛЬШЕ ЧЕМ ЭТО
 ///  ТО ВЫ СНОВА БУБЫЛДА ДУРАЦКАЯ И ВСЕ СЛОМАЛИ
+#endregion
 
 namespace MAIN_LIBRARY
 {
-    public class NAME //тут название своего класса и все что внутри его
+    #region ПРИМЕР КЛАССА
+    /// <summary>
+    /// НАЗВАНИЕ КЛАССА
+    /// ВАРИАНТ ЗАДАНИЯ
+    /// ФИО ИСПОЛНИТЕЛЯ
+    /// </summary>
+    public class NAME                   //УДАЛИТЕ ЭТО ИЛИ ЗАКОМЕНТИРУЙТЕ ПОСЛЕ СОЗДАНИЯ НЕСКОЛЬКИХ КЛАССОВ, ПАЖЕ ПАЖЕ 
     {
+        //тут ваши поля и их автоматические условия
+        private FIELD_TYPE FIELD_NAME1;
 
+        public FIELD_TYPE FIELD_NAME2;
+        {
+            set { FIELD_NAME1 = value; }
+            get { return FIELD_NAME1; }
+        }
+
+        //конструктор класса
+        public NAME( FIELD_TYPE FIELD_INPUT_NAME )
+        {
+            FIELD_NAME2 = FIELD_INPUT_NAME;
+        }
     }
+    #endregion
 
     /// <summary>
-    /// КЛАСС ДОЛЖНОСТЬ
-    /// ВАРИАНТ 10
-    /// МАЛЕГИН ДМИТРИЙ
+    /// Класс должность
+    /// Вариант 10
+    /// Малегин Дмитрий
     /// </summary>
     public class Doljnost
     {
         private string _name;
         private double _salary;
-        private Podrozdelenie _podrozdelenie;
+        private Podrozdelenie _podrozdelenie; //Балванка под пока не существующий класс ПОДРАЗДЕЛЕНИЕ
 
         public string Name
         {
-            get { return _name; }
             set { _name = value; }
+            get { return _name; }
         }
 
         public double Salary
         {
+            set
+            {
+                if (value >= 0) { _salary = value; }
+                else { throw new ArgumentOutOfRangeException(); }
+                    
+            }
             get { return _salary; }
-            set { _salary = value; }
         }
 
         public Doljnost(string name, double salary, Podrozdelenie podrozdelenie)
         {
-            _name = name;
-            _salary = salary;
+            Name = name;
+            Salary = salary;
             _podrozdelenie = podrozdelenie;
         }
     }
-
-    /// <summary>
-    /// ЧТО ЭТО
-    /// КАКОЙ ВАРИАНТ
-    /// КТО СДЕЛАЛ
-    /// </summary>
-    public class Podrozdelenie
-    {
-        private string _name;
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        public Podrozdelenie(string name)
-        {
-            _name = name;
-        }
-    }
-    
 }
