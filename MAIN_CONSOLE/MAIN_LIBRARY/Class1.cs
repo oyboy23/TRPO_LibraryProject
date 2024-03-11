@@ -73,50 +73,6 @@ namespace MAIN_LIBRARY
         }
     }
     /// <summary>
-    /// Класс Студент
-    /// Вариант 5
-    /// Клюев Никита
-    /// </summary>
-    public class Student
-    {
-        private string Group1 _group1; // - балванка так как нет работы на чью надо ссылаться,а именно на вариант 4 Группа.
-        private string surname;
-        public string Surname
-        {
-            get { return surname; }
-            set { surname = value; }
-        }
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        private string otchestvo;
-        public string OTchestvo
-        {
-            get { return otchestvo; }
-            set { otchestvo = value; }
-        }
-
-
-        private DateTime dateofbirth;
-        public DateTime Dateofbirth
-        {
-            get { return dateofbirth; }
-            set { dateofbirth = value; }
-
-        }
-        public Student(string surname, string name,string otchestvo,DateTime dateofbith,Group1 group1)
-        {
-            Surname = surname;
-            Name = name;
-            OTchestvo = otchestvo;
-            Dateofbirth = dateofbith;
-            _group1 = group1;
-        }
-    }
-
     /// Класс Аудитория
     /// Вариант 2
     /// Дайлиденок Никита
@@ -124,10 +80,10 @@ namespace MAIN_LIBRARY
     public class Auditoria
     {
         private string _Name;
-        //private Sotrydnik _sotrydnic; болванка нет класса сотрудник вариант 9
+        //private Sotrydnik _sotrydnic;
         private string _Seat = "23";
         private string _Windows = "2";
-        //private Oborydovanie _oborydovanie; болванка нет класса оборудование
+        //private Oborydovanie _oborydovanie;
 
         public string Name { get; set; }
         public string Seat { get; set; }
