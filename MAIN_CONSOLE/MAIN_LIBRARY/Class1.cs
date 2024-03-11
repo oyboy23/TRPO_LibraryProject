@@ -23,6 +23,7 @@ namespace MAIN_LIBRARY
     {
         private string _name;
         private double _salary;
+        private Podrozdelenie _podrozdelenie;
 
         public string Name
         {
@@ -36,13 +37,33 @@ namespace MAIN_LIBRARY
             set { _salary = value; }
         }
 
-        public Doljnost(string name, double salary)
+        public Doljnost(string name, double salary, Podrozdelenie podrozdelenie)
         {
             _name = name;
             _salary = salary;
+            _podrozdelenie = podrozdelenie;
+        }
+    }
+
+    /// <summary>
+    /// ЧТО ЭТО
+    /// КАКОЙ ВАРИАНТ
+    /// КТО СДЕЛАЛ
+    /// </summary>
+    public class Podrozdelenie
+    {
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
         }
 
+        public Podrozdelenie(string name)
+        {
+            _name = name;
+        }
     }
-   
     
 }
