@@ -116,4 +116,29 @@ namespace MAIN_LIBRARY
             _group1 = group1;
         }
     }
+
+    /// Класс Аудитория
+    /// Вариант 2
+    /// Дайлиденок Никита
+    /// </summary>
+    public class Auditoria
+    {
+        private string _Name;
+        //private Sotrydnik _sotrydnic; болванка нет класса сотрудник вариант 9
+        private string _Seat = "23";
+        private string _Windows = "2";
+        //private Oborydovanie _oborydovanie; болванка нет класса оборудование
+
+        public string Name { get; set; }
+        public string Seat { get; set; }
+        public string Windows { get; set; }
+        public Auditoria(string name, /*Sotrydnic sotrydnic,*/ string seat, /*Oborydovanie oborydovanie,*/ string windows)
+        {
+            _Name = name;
+            //_sotrydnic = sotrydnic;
+            _Seat = seat;
+            _Windows = windows;
+            //_oborydovanie = oborydovanie;
+        }
+    }
 }
