@@ -13,4 +13,36 @@ namespace MAIN_LIBRARY
     {
 
     }
+
+    /// <summary>
+    /// КЛАСС ДОЛЖНОСТЬ
+    /// ВАРИАНТ 10
+    /// МАЛЕГИН ДМИТРИЙ
+    /// </summary>
+    public class Doljnost
+    {
+        private string _name;
+        private double _salary;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public double Salary
+        {
+            get { return _salary; }
+            set { _salary = value; }
+        }
+
+        public Doljnost(string name, double salary)
+        {
+            _name = name;
+            _salary = salary;
+        }
+
+    }
+   
+    
 }
