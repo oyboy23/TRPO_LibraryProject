@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 #region ПРОЧТИ
 ///  ЭТО ВЕЛИКОЛЕПНАЯ БИБЛИОТЕКА КЛАССОВ
@@ -29,7 +30,7 @@ namespace MAIN_LIBRARY
         }
 
         //конструктор класса
-        public NAME( FIELD_TYPE FIELD_INPUT_NAME )
+        public NAME(FIELD_TYPE FIELD_INPUT_NAME)
         {
             FIELD_NAME2 = FIELD_INPUT_NAME;
         }
@@ -59,7 +60,7 @@ namespace MAIN_LIBRARY
             {
                 if (value >= 0) { _salary = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-                    
+
             }
             get { return _salary; }
         }
@@ -69,6 +70,50 @@ namespace MAIN_LIBRARY
             Name = name;
             Salary = salary;
             _podrozdelenie = podrozdelenie;
+        }
+    }
+    /// <summary>
+    /// Класс Студент
+    /// Вариант 5
+    /// Клюев Никита
+    /// </summary>
+    public class Student
+    {
+        private string Group1 _group1; // - балванка так как нет работы на чью надо ссылаться,а именно на вариант 4 Группа.
+        private string surname;
+        public string Surname
+        {
+            get { return surname; }
+            set { surname = value; }
+        }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        private string otchestvo;
+        public string OTchestvo
+        {
+            get { return otchestvo; }
+            set { otchestvo = value; }
+        }
+
+
+        private DateTime dateofbirth;
+        public DateTime Dateofbirth
+        {
+            get { return dateofbirth; }
+            set { dateofbirth = value; }
+
+        }
+        public Student(string surname, string name,string otchestvo,DateTime dateofbith,Group1 group1)
+        {
+            Surname = surname;
+            Name = name;
+            OTchestvo = otchestvo;
+            Dateofbirth = dateofbith;
+            _group1 = group1;
         }
     }
 }
