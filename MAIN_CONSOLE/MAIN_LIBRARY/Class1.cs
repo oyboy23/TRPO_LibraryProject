@@ -155,4 +155,43 @@ namespace MAIN_LIBRARY
             //_oborydovanie = oborydovanie;
         }
     }
+
+    /// <summary>
+    /// Класс Подразделение
+    /// Вариант 11
+    /// Носков Иван
+    /// </summary>
+    public class Podrozdelenie
+    {
+        private string _nazvanie;
+        private string _rukovoditel;
+        private Organizaciya _organizaciya;
+
+        public string Nazvanie
+        {
+            get { return _nazvanie; }
+            set { _nazvanie = value; }
+        }
+
+        public string Rukovoditel
+        {
+            get { return _rukovoditel; }
+            set { _rukovoditel = value; }
+        }
+
+        public Organizaciya Organizaciya
+        {
+            get { return _organizaciya; }
+            set { _organizaciya = value; }
+        }
+
+        public Podrozdelenie(string nazvanie, string rukovoditel, Organizaciya organizaciya)
+        {
+            Nazvanie = nazvanie;
+            Rukovoditel = rukovoditel;
+            Organizaciya = organizaciya;
+        }
+    }
 }
+    
+
