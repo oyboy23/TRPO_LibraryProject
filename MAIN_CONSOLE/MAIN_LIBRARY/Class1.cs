@@ -192,6 +192,22 @@ namespace MAIN_LIBRARY
             Organizaciya = organizaciya;
         }
     }
+    /// <summary>
+    /// Класс дисциплина
+    /// Вариант 3
+    /// Доронин Александр
+    /// </summary>
+     public class discipline
+ {
+     private string name;
+     private string reduction;
+
+     public discipline(string name, string reduction)
+     {
+         this.name = name;
+         this.reduction = reduction;
+     }
+ }
 }
     
 
