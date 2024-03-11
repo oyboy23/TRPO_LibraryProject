@@ -126,14 +126,26 @@ namespace MAIN_LIBRARY
     public class Auditoria
     {
         private string _Name;
-        //private Sotrydnik _sotrydnic;
+        //private Sotrydnik _sotrydnic; Балванка, нет класса сотрудник вариант 9
         private string _Seat = "23";
         private string _Windows = "2";
-        //private Oborydovanie _oborydovanie;
+        //private Oborydovanie _oborydovanie; В группе не делается такой вариант
 
-        public string Name { get; set; }
-        public string Seat { get; set; }
-        public string Windows { get; set; }
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+        public string Seat
+        {
+            get { return _Seat; }
+            set { _Seat = value; }
+        }
+        public string Windows
+        {
+            get { return _Windows; }
+            set { _Windows = value; }
+        }
         public Auditoria(string name, /*Sotrydnic sotrydnic,*/ string seat, /*Oborydovanie oborydovanie,*/ string windows)
         {
             _Name = name;
