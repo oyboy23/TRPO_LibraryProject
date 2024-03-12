@@ -277,6 +277,19 @@ namespace MAIN_LIBRARY
 
         }
     }
+    /// <summary>
+    /// Класс Вид Занятий
+    /// Вариант 14
+    /// Смирнов Кирилл
+    /// </summary>
+    class Vid_Zan
+    {
+        private string Name;
+        public Vid_Zan(string name)
+        {
+            Name = name;
+        }
+    }
 }
     
 
