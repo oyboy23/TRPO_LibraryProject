@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers;
 using System.Text.RegularExpressions;
 
 #region ПРОЧТИ
@@ -310,6 +311,72 @@ namespace MAIN_LIBRARY
         {
             Name = name;
         }
+    }
+    /// <summary>
+    /// Класс Пара
+    /// вариант 7
+    /// Костров Егор
+    /// </summary>
+    class Para
+    {
+        private string StartPara;
+        private string EndPara;
+        private string StartChill;
+        private string EndChill;
+        private string Smena _smena;
+        public string ParaStart
+        {
+            get
+            {
+                return StartPara;
+            }
+            set
+            {
+                StartPara = value;
+            }
+        }
+        public string ParaEnd
+        {
+            get
+            {
+                return EndPara;
+            }
+            set
+            {
+                EndPara = value;
+            }
+        }
+        public string ChillStart
+        {
+            get
+            {
+                return StartChill;
+            }
+            set
+            {
+                StartChill = value;
+            }
+        }
+        public string ChillEnd
+        {
+            get
+            {
+                return EndChill;
+            }
+            set
+            {
+                EndChill = value;
+            }
+        }
+        public Para(string startpara, string endpara, string startchill, string endchill, Smena smena)
+        {
+            StartPara = startpara;
+            EndPara = endpara;
+            StartChill = startchill;
+            EndChill = endchill;
+            _smena = smena;
+        }
+
     }
 }
     
