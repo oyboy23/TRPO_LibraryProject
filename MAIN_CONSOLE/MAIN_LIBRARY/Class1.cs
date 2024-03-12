@@ -193,6 +193,65 @@ namespace MAIN_LIBRARY
         }
     }
     /// <summary>
+    /// Класс Группа
+    /// Вариант 4
+    /// Киселёв Александр
+    /// </summary>
+    public class Group1
+    {
+        private string _nazvanie;
+        private string _sokrachenie;
+        private string _chislennost;
+        private int _godpostuplenija;
+        private string Sotrudnik _sotrudnic; //Нет варианта 9 (Сотрудник)
+        private string Specialnost _specialnost; //Нет варианта 6 (Специальность)
+        public string Nazvanie
+        {
+            get { return _nazvanie; }
+            set { _nazvanie = value; }
+        }
+        public string Sokrachenie
+        {
+            get { return _sokrachenie; }
+            set { _sokrachenie = value; }
+        }
+        public string Chislennost
+        {
+            get { return _chislennost; }
+            set { _chislennost = value; }
+        }
+        public int Godpostuplenija
+        {
+            set
+            {
+                if (value >= 0) { _godpostuplenija = value; }
+                else { throw new ArgumentOutOfRangeException(); }
+
+            }
+            get { return _godpostuplenija; }
+        }
+        public string Sotrudnik 
+        {
+            get { return _sotrudik; }
+            set { _sotrudnic = value; }
+        }
+        public string Specialnost
+        {
+            get { return _specialnost; }
+            set { _specialnost = value; }
+        }
+        public Group1(string nazvanie, string sokrachenie, string chislennost, int godpostuplenija, Sotrudnik sotrudnic, Specialnost specialnost)
+        {
+            Nazvanie = nazvanie;
+            Sokrachenie = sokrachenie;
+            Chislennost = chislennost;
+            Godpostuplenija = godpostuplenija;
+            _sotrudnic = sotrudnic;
+            _specialnost = specialnost;
+
+        }
+    }
+    /// <summary>
     /// Класс дисциплина
     /// Вариант 3
     /// Доронин Александр
