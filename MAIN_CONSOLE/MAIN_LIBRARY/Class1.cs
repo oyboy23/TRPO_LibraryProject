@@ -103,7 +103,7 @@ namespace MAIN_LIBRARY
     public class Auditoria
     {
         private string _Name;
-        //private Sotrydnik _sotrydnic; Балванка, нет класса сотрудник вариант 9
+        private Sotrudnik _sotrudnic;
         private string _Seat = "23";
         private string _Windows = "2";
         //private Oborydovanie _oborydovanie; В группе не делается такой вариант
@@ -123,10 +123,10 @@ namespace MAIN_LIBRARY
             get { return _Windows; }
             set { _Windows = value; }
         }
-        public Auditoria(string name, /*Sotrydnic sotrydnic,*/ string seat, /*Oborydovanie oborydovanie,*/ string windows)
+        public Auditoria(string name, Sotrudnic sotrudnic, string seat, /*Oborydovanie oborydovanie,*/ string windows)
         {
             _Name = name;
-            //_sotrydnic = sotrydnic;
+            _sotrudnic = sotrudnic;
             _Seat = seat;
             _Windows = windows;
             //_oborydovanie = oborydovanie;
