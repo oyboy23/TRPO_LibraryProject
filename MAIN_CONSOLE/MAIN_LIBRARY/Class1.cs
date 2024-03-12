@@ -263,6 +263,15 @@ namespace MAIN_LIBRARY
             Org = "-"; /// нет класса
         }
     }
+    public class Smena
+    {
+        public string Name { get; }
+        public Smena(string name)
+        {
+            Name = name;
+
+        }
+    }
 }
     
 
