@@ -263,6 +263,11 @@ namespace MAIN_LIBRARY
             Org = "-"; /// нет класса
         }
     }
+    /// <summary>
+    /// Класс смена
+    /// Вариант 8
+    /// Крылов Арсений
+    /// </summary>
     public class Smena
     {
         public string Name { get; }
