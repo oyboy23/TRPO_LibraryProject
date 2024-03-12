@@ -56,7 +56,7 @@ namespace MAIN_LIBRARY
     /// </summary>
     public class Student
     {
-        private string Group1 _group1; // - балванка так как нет работы на чью надо ссылаться,а именно на вариант 4 Группа.
+        private Group1 _group1; 
         private string surname;
         public string Surname
         {
