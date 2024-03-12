@@ -378,6 +378,52 @@ namespace MAIN_LIBRARY
         }
 
     }
+    /// <summary>
+    /// Класс Сотрудник 
+    /// Вариант 9
+    /// Кулишенко Кирилл 
+    /// </summary>
+    public class Sotrudnic
+    {
+        private string _Surname;
+
+        private string _Name;
+        private string _Otchestvo;
+        private Doljnost doljnost;
+
+
+
+        public string Surname
+        {
+            get { return _Surname; }
+            set { _Surname = value; }
+        }
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+        public string Otchestvo
+        {
+            get { return _Otchestvo; }
+            set { _Otchestvo = value; }
+        }
+        public  Doljnost _doljnost
+        {
+            get { return _doljnost; }
+            set { _doljnost = value; }
+        }
+        public Sotrudnic(string surname,  string name,  string otchestvo, Doljnost doljnost)
+        {
+            _Surname = name;
+            
+            _Name = name;
+            _Otchestvo= otchestvo;
+            _doljnost= doljnost;
+            
+        }
+    }
+
 }
     
 
