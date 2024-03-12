@@ -12,31 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace MAIN_LIBRARY
 {
-    #region ПРИМЕР КЛАССА
-    /// <summary>
-    /// НАЗВАНИЕ КЛАССА
-    /// ВАРИАНТ ЗАДАНИЯ
-    /// ФИО ИСПОЛНИТЕЛЯ
-    /// </summary>
-    public class NAME                   //УДАЛИТЕ ЭТО ИЛИ ЗАКОМЕНТИРУЙТЕ ПОСЛЕ СОЗДАНИЯ НЕСКОЛЬКИХ КЛАССОВ, ПАЖЕ ПАЖЕ 
-    {
-        //тут ваши поля и их автоматические условия
-        private FIELD_TYPE FIELD_NAME1;
-
-        public FIELD_TYPE FIELD_NAME2;
-        {
-            set { FIELD_NAME1 = value; }
-            get { return FIELD_NAME1; }
-        }
-
-        //конструктор класса
-        public NAME(FIELD_TYPE FIELD_INPUT_NAME)
-        {
-            FIELD_NAME2 = FIELD_INPUT_NAME;
-        }
-    }
-    #endregion
-
+    
     /// <summary>
     /// Класс должность
     /// Вариант 10
@@ -267,6 +243,26 @@ namespace MAIN_LIBRARY
          this.reduction = reduction;
      }
  }
+    /// <summary>
+    /// Класс корпус
+    /// Вариант 13
+    /// Смирнов Евгений
+    /// </summary>
+    public class Corpus
+    {
+        private string Name { get; set; }
+        private string Adress { get; set; }
+        private string Comm { get; set; }
+        private string Org { get; set; }
+
+        public Corpus(string name, string adress)
+        {
+            Name = name;
+            Adress = adress;
+            Comm = "-"; /// нет класса
+            Org = "-"; /// нет класса
+        }
+    }
 }
     
 
