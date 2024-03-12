@@ -169,6 +169,27 @@ namespace MAIN_LIBRARY
         }
     }
     /// <summary>
+    /// Класс организация
+    /// Вариант 12
+    /// Рыбаков Кирилл
+    /// </summary>
+    public class Organizaciya
+    {
+        private string _nazvanie;
+        private string _yuridicheskiyAdres;
+        private string _fakticheskiyAdres;
+        //private Sotrudnik _rukovoditel; //класс сотрудник еще не создан
+
+        public Organizaciya(string nazvanie, string yuridicheskiyAdres, string fakticheskiyAdres /*Sotrudnik rukovoditel*/)// класс пока еще не создан
+        {
+            _nazvanie = nazvanie;
+            _yuridicheskiyAdres = yuridicheskiyAdres;
+            _fakticheskiyAdres = fakticheskiyAdres;
+            //_rukovoditel = rukovoditel; //нужен класс сотрудник
+        }
+    }
+
+    /// <summary>
     /// Класс Группа
     /// Вариант 4
     /// Киселёв Александр
