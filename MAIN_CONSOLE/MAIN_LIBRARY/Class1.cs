@@ -12,8 +12,7 @@ using System.Text.RegularExpressions;
 #endregion
 
 namespace MAIN_LIBRARY
-{
-    
+{    
     /// <summary>
     /// Класс должность
     /// Вариант 10
@@ -75,8 +74,6 @@ namespace MAIN_LIBRARY
             get { return otchestvo; }
             set { otchestvo = value; }
         }
-
-
         private DateTime dateofbirth;
         public DateTime Dateofbirth
         {
@@ -384,9 +381,6 @@ namespace MAIN_LIBRARY
         private string _Name;
         private string _Otchestvo;
         private Doljnost doljnost;
-
-
-
         public string Surname
         {
             get { return _Surname; }
