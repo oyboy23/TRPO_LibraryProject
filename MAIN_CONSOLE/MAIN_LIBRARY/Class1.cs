@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Buffers;
 using System.Text.RegularExpressions;
 
@@ -37,7 +37,6 @@ namespace MAIN_LIBRARY
             {
                 if (value >= 0) { _salary = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
             get { return _salary; }
         }
@@ -83,7 +82,6 @@ namespace MAIN_LIBRARY
         {
             get { return dateofbirth; }
             set { dateofbirth = value; }
-
         }
         public Student(string surname, string name, string otchestvo, DateTime dateofbith, Group1 group1)
         {
@@ -224,7 +222,6 @@ namespace MAIN_LIBRARY
             {
                 if (value >= 0) { _godpostuplenija = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
             get { return _godpostuplenija; }
         }
@@ -246,7 +243,6 @@ namespace MAIN_LIBRARY
             Godpostuplenija = godpostuplenija;
             _sotrudnic = sotrudnic;
             _specialnost = specialnost;
-
         }
     }
     /// <summary>
@@ -296,7 +292,6 @@ namespace MAIN_LIBRARY
         public Smena(string name)
         {
             Name = name;
-
         }
     }
     /// <summary>
@@ -376,7 +371,6 @@ namespace MAIN_LIBRARY
             EndChill = endchill;
             _smena = smena;
         }
-
     }
     /// <summary>
     /// Класс Сотрудник 
@@ -420,10 +414,6 @@ namespace MAIN_LIBRARY
             _Name = name;
             _Otchestvo= otchestvo;
             _doljnost= doljnost;
-            
         }
     }
-
 }
-    
-
