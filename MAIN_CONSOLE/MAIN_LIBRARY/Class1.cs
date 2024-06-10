@@ -10,7 +10,6 @@ using System.Text.RegularExpressions;
 ///  ЕСЛИ БИБЛИОТЕК ВДРУГ СТАЛО БОЛЬШЕ ЧЕМ ЭТО
 ///  ТО ВЫ СНОВА БУБЫЛДА ДУРАЦКАЯ И ВСЕ СЛОМАЛИ
 #endregion
-
 namespace MAIN_LIBRARY
 {    
     /// <summary>
